@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@1,300 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root{
+--blue_sky: #34B0BE;
+--grey_white: #D1CECA;
+--azul_dark: #242635;
+--white:#ffffff;
+
+ }
+body{
+    font-family: montserrat;
+    background-color: var(--azul_dark);
+    text-align: center;
+    color: var(--white);
+}
+
+
+    /*nav*/
+
+    .nav{
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        text-decoration: none;
+   list-style: none;
+    }
+
+    #btn--menu{
+        visibility: hidden;   
+    }
+    
+    .nav--menu{ 
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+    }
+
+    a:hover{color: var(--blue_sky);}
+
+a{text-decoration: none;
+color: var(--white);}
+
+
+.nav--item{
+    list-style: none;
+    margin: 1rem;
+}
+
+
+
+
+/*certificados*/
+.container-grid{border: 1px solid;
+    width: 300px;
+height: 350px;
+border-radius: 8px;
+}
+
+
+.grid{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+   grid-template-areas: "uno  dos tres"
+                       "cuatro cinco seis ";
+    gap: 0.5rem;
+
+    }
+    
+.uno{ grid-area: uno;
+background-image: url(/assets/img/certificado\ udc.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-size: 100% 100%;
+width: 300px;
+}
+.dos{grid-area: dos;
+    background-image: url(/assets/img/aplicaciones\ web\ de\ una\ sola\ pagina_page-0001.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-size: 100% 100%;
+}
+.tres{grid-area: tres;
+    background-image: url(/assets/img/DESARROLLO\ DE\ APLICACIONES\ WEB\ CON\ ARQUITECTURA\ DE\ INTERCAMBIO\ DE\ DATOS_pages-to-jpg-0001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.cuatro{grid-area: cuatro;
+    background-image: url(/assets/img/fundamento\ academlo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    width: 300px;
+}
+.cinco{grid-area: cinco;
+    background-image: url(/assets/img/scrum\ para\ desarrollo\ de\ software_page-0001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.seis{grid-area: seis;
+    background-image: url(/assets/img/mysql_page-0001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+
+.download{
+border: none;
+margin-top: 100%;
+background-color: #0adef682;
+border-radius: 7px;
+color: rgb(49, 47, 47);
+box-shadow: 2px 3px 2px 3px gray;
+}
+
+
+
+/* header text*/
+
+
+.header--section{
+    overflow: hidden;
+display: flex;
+flex-direction: column;
+margin-top: 2rem;
+}
+
+
+h1{color: var(--blue_sky);
+}
+span{color: var(--blue_sky);
+}
+.redes--sociales{
+    display: flex;
+    justify-content: space-evenly;
+margin-top: 1rem;
+
+
+
+}
+
+.redes--img{
+background-color: var(--white);
+border-radius: 100%;
+margin: 10px;
+}
+
+.redes--img:hover{
+background-color: var(--blue_sky);
+
+}
+
+header{
+    width: 100%;
+}
+
+
+.header--img{
+border-radius: 100%;
+width: 280px;
+height: 280px;
+background-color:#555769;
+margin: 0 auto;
+
+
+
+}
+
+.header--education{ 
+display: flex;
+justify-content: space-evenly;
+margin-top: 1rem;
+}
+
+.education--img{
+width: 70px;
+background-color: var(--white);
+height: 50px;
+border-radius: 5px 6px 7px 7px  ;
+}
+
+.education--img:hover{
+background-color: var(--blue_sky);
+
+}
+
+
+/*acerca de mi*/
+.main--acercade{
+padding: 1rem; 
+text-align: justify;
+width: 80%;
+margin:0 auto;
+margin-top: 10px;
+}
+
+h2{text-align: center;
+color: var(--blue_sky);
+}
+
+
+
+
+
+/*skills*/
+.skills--parrafo{
+text-align: center;
+
+}
+
+.progress{
+width:70%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+/*footer*/
+footer{
+height: auto;
+
+}
+.footer--contact-img{
+margin-top: 3rem;
+
+
+}
+
+.copyright--img{
+width: 20px;
+}
+.container--copyright{
+margin-top: 3rem;
+background-color: #628286;
+height: 30px;
+}
+
+.container--contact{
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.footer--contact{
+    
+background-color: var(--white);
+color: var(--azul_dark);
+width: 300px;
+height: 200px;
+margin: 0.3rem;
+margin-left: auto;
+margin-right: auto;
+border-radius: 0px 35px;
+
+}
+.footer--contact:hover{
+    background-color: #bebfc2;
+}
+
+
+.link--contact{color: var(--blue_sky);
+font-size: 14px;}
+
+
+/*portafolio*/
+
+.contenedor--portafolio{
+display: flex;
+flex-direction: row;
+}
+
+.galeria--portafolio{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.portafolio--img{
+width: 300px;
+height: 250px;
+margin: 1rem 1rem;
+border-radius: 15px;
+
+}
+.portafolio--img:hover{
+box-shadow: 2px 2px 2px 2px gray;
+
+}
+
+
+
+
+/*media querys*/
+
+
+@media screen and (min-width: 992px) {
+
+    /*portafolio*/
+
+
+    .contenedor--portafolio{
+      
+        width: 100%;
+    }
+    
+    
+    .galeria--portafolio img {
+       padding: 0.5rem;
+        object-fit: cover;
+    height: auto;
+    max-width: 350px;
+    }
+    
+    .portafolio--img{
+        border-radius: 15px 15px 15px 15px;
+  
+    }
+
+}
+
+
+/*mediaquery 768*/
+
+@media screen and (min-width:768px) {
+
+    h1{font-size: 80px bold ;}
+    h2{font-size: 50px bold;}
+    body{font-size: 18px;}
+
+    .header--section{
+        display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+}
+
+.label--menu{display: none;}
+
+    .header--text{
+width: 350px;
+padding: 5rem;
+margin-inline-start: 55px;
+
+}
+
+    .header--img{
+        /* width: 300px; */
+        height: 300px;
+margin-top: 3rem;
+margin-right: 10rem;
+
+
+    }
+
+    .container--cards{
+        padding: 1rem;
+        display: flex;
+flex-direction: row;
+
+    }
+/*portafolio*/
+.contenedor--portafolio{
+    width: 100%;
+}
+
+
+
+.galeria--portafolio img {
+   padding: 0.1rem;
+    object-fit: cover;
+height: auto;
+width: 25%;
+height: 250px;
+
+}
+
+.portafolio--img{
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+
+
+
+
+.container--contact{flex-direction: row;}
+
+
+    .portafolio--img{
+        padding: 0.5rem;
+        width: 250px;
+        height: 200px;
+
+    }
+/*servicios card*/
+
+.contenedor--cards{
+      
+    width: 100%;
+}
+
+
+.lista--cards .main--cards{
+   padding: 0.5rem;
+    width: 100%;
+    object-fit: cover;
+height: auto;
+}
+
+
+.lista--cards{
+width: 100%;
+display: flex;
+overflow: auto;
+
+}
+
+.main--card{
+padding: 0.5rem;
+width: 230px;
+height: 200;
+
+}
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    /*portafolio*/
+    .contenedor--portafolio{
+      width: 100%;
+    }
+    .galeria--portafolio img {
+       padding: 0.5rem;
+        width: 100%;
+        object-fit: cover;
+    height: 250px;
+    width: 280px;
+max-width: 350px;
+    }
+
+    h1{font-size: 50px bold ;}
+    h2{font-size: 32px bold;}
+    body{font-size: 16px;}
+section{font-size: 18px;}
+
+    .galeria--portafolio{
+    display: flex;
+    overflow: auto;
+   
+    }
+    .portafolio--img{
+        border-radius: 15px 15px 15px 15px;
+        padding: 0.5rem;
+        height: 250px;
+    }
+
+
+/*servicios card*/
+
+.contenedor--cards{
+      
+    width: 100%;
+}
+
+
+.lista--cards .main--cards{
+   padding: 0.5rem;
+    width: 100%;
+    object-fit: cover;
+height: auto;
+}
+
+
+.lista--cards{
+display: flex;
+overflow: auto;
+width: 100%;
+height: 300px;
+}
+.main--card{
+margin: 10px;
+min-width: 250px;
+}
+
+/*navegacio*/
+    .nav{
+        display: flex;
+        padding: 00.5rem 1rem;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        text-decoration: none;
+    }
+
+    #btn--menu{
+        visibility: hidden;   
+    }
+    
+    .nav--menu{
+        position: absolute;
+        background: rgb(121, 126, 124);
+        width: 300px;
+        top: 80px;
+        min-height: calc( 100vh - 80px );
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        display: flex;
+        left: -100%;
+        transition: left .5s linear;
+    }
+
+a{text-decoration: none;
+color: var(--white);}
+
+#btn--menu:checked ~ .nav--menu{
+    left: 0;
+}
+.nav--item{
+    list-style: none;
+}
+.nav--item:hover{
+background-color: var(--white);
+color: #34B0BE;
+width: 250px;
+height: 50px;
+
+}
+
+.container--copyright{
+    font-size: 14px;
+}
+
+.header--img{
+width: 200px;
+height: 200px;
+margin-bottom: 1rem;
+}
+    
+}
+
